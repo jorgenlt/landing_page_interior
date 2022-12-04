@@ -1,0 +1,91 @@
+$body-font: "Poppins", "Helvetica", "sans-serif";
+$headers-font: "Playfair Display", "Helvetica", "serif";
+
+h1, h2, h3 {
+  font-family: $headers-font;
+}
+
+p {
+  font-family: $body-font;
+}
+
+.card-container {
+  height: 100vh;
+  background-image: $gradient-right;
+}
+
+.main-card {
+  height: 70vh;
+  width: 80vw;
+  box-shadow:
+  2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+  6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+  12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+  22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+  41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+  100px 100px 80px rgba(0, 0, 0, 0.07)
+  ;
+  background-color: $linen;
+  border-radius: 3px;
+  overflow: hidden;
+  h1 {
+    font-size: 3rem;
+  }
+
+  .upper-h-card {
+    height: 65%;
+  }
+
+  .lower-h-card {
+    height: 35%;
+  }
+
+  .upper-h-card-left {
+    width: 55%;
+    opacity: 0.7;
+
+  }
+
+  .upper-h-card-right {
+    width: 45%;
+    padding: 0rem 2rem;
+
+    h1 {
+      margin-bottom: 2rem;
+    }
+  }
+
+  .lower-h-card-left {
+    width: 30%;
+    opacity: 0.7;
+    background-image: url('../assets/img/tomas-jasovsky-d5SZqLkpIrY-unsplash.jpg');
+    background-blend-mode: color;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .lower-h-card-middle {
+    width: 40%;
+    padding: 0rem 2rem;
+    h2 {
+      margin-bottom: 1.5rem;
+    }
+  }
+
+  .lower-h-card-right  {
+    width: 30%;
+    opacity: 0.7;
+    background-image: url('../assets/img/fabian-kuhne-zVwBT5i2SoE-unsplash.jpg');
+    background-blend-mode: color;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+  }
+
+}
+
+#brad {
+  border-radius: 20px;
+}
