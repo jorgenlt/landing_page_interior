@@ -10,11 +10,16 @@ p {
 }
 
 .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   background-image: $gradient-right;
 }
 
 .main-card {
+  display: flex;
+  flex-direction: column;
   height: 70vh;
   width: 80vw;
   box-shadow:
@@ -33,10 +38,12 @@ p {
   }
 
   .upper-h-card {
+    display: flex;
     height: 65%;
   }
 
   .lower-h-card {
+    display: flex;
     height: 35%;
   }
 
@@ -47,6 +54,9 @@ p {
   }
 
   .upper-h-card-right {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 45%;
     padding: 0rem 2rem;
 
@@ -56,6 +66,7 @@ p {
   }
 
   .lower-h-card-left {
+    display: flex;
     width: 30%;
     opacity: 0.7;
     background-image: url('../assets/img/tomas-jasovsky-d5SZqLkpIrY-unsplash.jpg');
@@ -66,6 +77,9 @@ p {
   }
 
   .lower-h-card-middle {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     width: 40%;
     padding: 0rem 2rem;
     h2 {
@@ -74,6 +88,7 @@ p {
   }
 
   .lower-h-card-right  {
+    display: flex;
     width: 30%;
     opacity: 0.7;
     background-image: url('../assets/img/fabian-kuhne-zVwBT5i2SoE-unsplash.jpg');

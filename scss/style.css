@@ -49,6 +49,7 @@ span {
   position: relative;
   /* z-index coz when we put bg to before and after this span text will not be visible */
   z-index: 3;
+  font-weight: bold;
 }
 
 /* Button 1 styles */
@@ -97,11 +98,16 @@ p {
 }
 
 .card-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
   background-image: linear-gradient(90deg, #edede9, #d6ccc2, #f5ebe0, #e3d5ca, #d5bdaf);
 }
 
 .main-card {
+  display: flex;
+  flex-direction: column;
   height: 70vh;
   width: 80vw;
   box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02), 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028), 12.5px 12.5px 10px rgba(0, 0, 0, 0.035), 22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042), 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05), 100px 100px 80px rgba(0, 0, 0, 0.07);
@@ -113,9 +119,11 @@ p {
   font-size: 3rem;
 }
 .main-card .upper-h-card {
+  display: flex;
   height: 65%;
 }
 .main-card .lower-h-card {
+  display: flex;
   height: 35%;
 }
 .main-card .upper-h-card-left {
@@ -123,6 +131,9 @@ p {
   opacity: 0.7;
 }
 .main-card .upper-h-card-right {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 45%;
   padding: 0rem 2rem;
 }
@@ -130,6 +141,7 @@ p {
   margin-bottom: 2rem;
 }
 .main-card .lower-h-card-left {
+  display: flex;
   width: 30%;
   opacity: 0.7;
   background-image: url("../assets/img/tomas-jasovsky-d5SZqLkpIrY-unsplash.jpg");
@@ -139,6 +151,9 @@ p {
   background-position: center;
 }
 .main-card .lower-h-card-middle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   width: 40%;
   padding: 0rem 2rem;
 }
@@ -146,6 +161,7 @@ p {
   margin-bottom: 1.5rem;
 }
 .main-card .lower-h-card-right {
+  display: flex;
   width: 30%;
   opacity: 0.7;
   background-image: url("../assets/img/fabian-kuhne-zVwBT5i2SoE-unsplash.jpg");
@@ -157,4 +173,47 @@ p {
 
 #brad {
   border-radius: 20px;
-}/*# sourceMappingURL=style.css.map */
+}
+
+@media only screen and (max-width: 900px) {
+  .card-container {
+    height: 1400px;
+  }
+  .main-card {
+    width: 100%;
+    height: inherit;
+  }
+  .main-card .upper-h-card {
+    flex-wrap: wrap;
+    height: 580px;
+  }
+  .main-card .upper-h-card-right {
+    width: 100%;
+    height: 55%;
+  }
+  .main-card .upper-h-card-right .btn-1 {
+    align-items: center;
+  }
+  .main-card .upper-h-card-left {
+    width: 100%;
+    height: 45%;
+  }
+  .main-card .lower-h-card {
+    flex-wrap: wrap;
+    height: 750px;
+  }
+  .main-card .lower-h-card-left {
+    width: 100%;
+    height: 33%;
+  }
+  .main-card .lower-h-card-middle {
+    width: 100%;
+    height: 33%;
+  }
+  .main-card .lower-h-card-right {
+    width: 100%;
+    height: 33%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
